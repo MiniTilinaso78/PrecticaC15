@@ -10,5 +10,17 @@ public class Gerente extends Empleado {
 
     }
 
+    public double getBono() {
+        return bono;
+    }
 
+    @Override
+    public double getSalarioBase() {
+        return super.getSalarioBase();
+    }
+
+    @Override
+    public String getId() {
+        return super.getId();
+    }
 }

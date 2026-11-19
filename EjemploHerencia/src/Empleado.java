@@ -6,6 +6,14 @@ public class Empleado {
         this.salarioBase = salarioBase;
     }
     protected double calcularPago(double impuesto){
-        return this.salarioBase*(100-impuesto);
+        return this.salarioBase*(1-impuesto/100);
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
     }
 }
